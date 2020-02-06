@@ -1,0 +1,21 @@
+/*
+    Desc: Layout for the app
+*/
+
+.App {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .navigation {
+        flex: 1 0 20%;
+    }
+
+    .dashboard {
+        flex: 1 0 80%;
+    }
+
+    .header {
+        flex: 0 1 100%;
+    }
+}

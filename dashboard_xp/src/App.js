@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './components/header/header.js';
 import Navigation from './components/navigation/navigation.js';
+import Dashboard from './components/dashboard/dashboard.js';
 import logo from './logo.svg';
-// import './App.css';
 import './css/style.css';
 
 
@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <Navigation></Navigation>
+      <Dashboard></Dashboard>
     </div>
   );
 }

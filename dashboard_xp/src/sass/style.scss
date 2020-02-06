@@ -6,11 +6,14 @@
 /*
     # Layout
 */
+@import "layout/_appLayout.scss";
 @import "layout/_header.scss";
 @import "layout/_navigation.scss";
+@import "layout/_dashboard.scss";
 
 /*
     # Styling
 */
 @import "styling/_header.scss";
 @import "styling/_navigation.scss";
+@import "styling/_dashboard.scss";
