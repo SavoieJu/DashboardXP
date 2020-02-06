@@ -1,0 +1,158 @@
+/*
+    Author: Julien Savoie
+*/
+/*
+    # Layout
+*/
+/*
+    Desc: Layout for the header
+*/
+.topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 10vh;
+}
+
+.topbar .topbar-logo {
+  height: 100%;
+  -ms-flex-preferred-size: fill;
+      flex-basis: fill;
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.topbar .topbar-logo img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.topbar .search {
+  height: 100%;
+  -ms-flex-preferred-size: fill;
+      flex-basis: fill;
+  width: 60vw;
+}
+
+.topbar .search .search-input {
+  height: 100%;
+  width: 80%;
+  padding: 0;
+}
+
+.topbar .search .search-enter {
+  height: 100%;
+  width: 20%;
+  padding: 0;
+}
+
+.topbar .topbar-acctype {
+  height: 100%;
+  -ms-flex-preferred-size: fill;
+      flex-basis: fill;
+  width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.topbar .topbar-acctype .acctype {
+  width: 100%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.topbar .topbar-acctype .acctype .accType-select {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 50%;
+}
+
+/*
+    Desc: Layout for the navigation bar
+*/
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigation hr {
+  width: 50%;
+}
+
+.navigation .link {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*
+    # Styling
+*/
+/*
+    Desc: Styling for the header
+*/
+.topbar {
+  background-color: #FFFFFF;
+}
+
+.topbar .search .search-input {
+  border: none;
+  font-size: 2.5em;
+  outline: none;
+}
+
+.topbar .search .search-enter {
+  border: none;
+  font-size: 2.5em;
+  outline: none;
+  background-color: #FFFFFF;
+  border: 2px solid #2b2f8e;
+}
+
+.topbar .search .search-enter:hover {
+  background-color: #2b2f8e;
+  color: #FFFFFF;
+}
+
+/*
+    Desc: Styling for the navigation bar
+*/
+.navigation hr {
+  border: 1px solid black;
+}
+/*# sourceMappingURL=style.css.map */

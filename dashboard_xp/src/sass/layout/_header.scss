@@ -1,0 +1,61 @@
+/*
+    Desc: Layout for the header
+*/
+
+.topbar {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+
+    .topbar-logo {
+        height: 100%;
+        flex-basis: fill;
+        width: 30vw;
+        display: flex;
+        justify-content: center;
+
+        img {
+            align-self: center;
+        }
+    }
+
+    .search {
+        height: 100%;
+        flex-basis: fill;
+        width: 60vw;
+
+        .search-input {
+            height: 100%;
+            width: 80%;
+            padding: 0;
+        }
+
+        .search-enter {
+            height: 100%;
+            width: 20%;
+            padding: 0;
+        }
+    }
+
+    .topbar-acctype {
+        height: 100%;
+        flex-basis: fill;
+        width: 20vw;
+        display: flex;
+        justify-content: center;
+
+        .acctype {
+            width: 100%;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+
+            .accType-select {
+                align-self: center;
+                width: 50%;
+                
+            }
+        }
+    }
+}

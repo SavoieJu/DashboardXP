@@ -1,0 +1,29 @@
+/*
+    Desc: Styling for the header
+*/
+
+.topbar {
+    background-color: #FFFFFF;
+
+    .search {
+
+        .search-input {
+            border: none;
+            font-size: 2.5em;
+            outline: none;
+        }
+
+        .search-enter {
+            border: none;
+            font-size: 2.5em;
+            outline: none;
+            background-color: #FFFFFF;
+            border: 2px solid #2b2f8e;
+
+            &:hover {
+                background-color: #2b2f8e;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+/*
+    Desc: Layout for the navigation bar
+*/
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    hr {
+        width: 50%;
+    }
+
+    .link {
+        align-self: center;
+        display: flex;
+        justify-content: center;
+    }
+}
