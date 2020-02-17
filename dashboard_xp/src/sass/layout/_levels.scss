@@ -2,3 +2,20 @@
     Desc: Layout for the levels section of the dashboard
 */
 
+.levels {
+    display: flex;
+    flex-direction: column;
+    width: 20vw; //temp
+    padding: 20px;
+
+    .skill {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        h4 {
+            margin: 0;
+        }
+    }
+}

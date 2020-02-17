@@ -164,6 +164,36 @@
 /*
     Desc: Layout for the levels section of the dashboard
 */
+.levels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20vw;
+  padding: 20px;
+}
+
+.levels .skill {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.levels .skill h4 {
+  margin: 0;
+}
+
 /*
     # Styling
 */
@@ -210,4 +240,10 @@
 /*
     Desc: Styling for the levels section of the dashboard
 */
+.levels {
+  -webkit-box-shadow: 0px 0px 6px 1px #e6e6e6;
+          box-shadow: 0px 0px 6px 1px #e6e6e6;
+  border-radius: 50px;
+  background-color: #FFF;
+}
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,12 @@ class Levels extends React.Component{
         return (
           <div className="levels">
             <Skill skillName="Attack" level="76" experience="1546000"></Skill>
+            <Skill skillName="Attack" level="76" experience="1546000"></Skill>
+            <Skill skillName="Attack" level="76" experience="1546000"></Skill>
+            <Skill skillName="Attack" level="76" experience="1546000"></Skill>
+            <Skill skillName="Attack" level="76" experience="1546000"></Skill>
+            <Skill skillName="Attack" level="76" experience="1546000"></Skill>
+            <Skill skillName="Constitution" level="99" experience="200000000"></Skill>
           </div>
        );
     }   
