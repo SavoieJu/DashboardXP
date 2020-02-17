@@ -162,6 +162,9 @@
 }
 
 /*
+    Desc: Layout for the levels section of the dashboard
+*/
+/*
     # Styling
 */
 /*
@@ -201,6 +204,10 @@
     Desc: Styling for the dashboard
 */
 .dashboard {
-  background-color: lightgrey;
+  background-color: #ededed;
 }
+
+/*
+    Desc: Styling for the levels section of the dashboard
+*/
 /*# sourceMappingURL=style.css.map */
