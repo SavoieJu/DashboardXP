@@ -3,9 +3,10 @@
 */
 
 .levels {
+    grid-area: 2 / 2 / span 16 / span 5;
     display: flex;
     flex-direction: column;
-    width: 20vw; //temp
+    // width: 20vw; //temp
     padding: 20px;
 
     .skill {

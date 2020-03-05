@@ -12,9 +12,6 @@ class Header extends React.Component{
             <div className="topbar-search">
                 <Search></Search>
             </div>
-            <div className="topbar-acctype">
-                <AccType></AccType>
-            </div>
           </header>
        );
     }   

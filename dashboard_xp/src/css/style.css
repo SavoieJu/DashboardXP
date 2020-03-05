@@ -2,6 +2,12 @@
     Author: Julien Savoie
 */
 /*
+    # Variables
+*/
+/*
+    Author: Julien Savoie
+*/
+/*
     # Layout
 */
 /*
@@ -48,7 +54,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 10vh;
+  height: 100px;
   max-width: 100vw;
 }
 
@@ -75,7 +81,7 @@
   height: 100%;
   -ms-flex-preferred-size: fill;
       flex-basis: fill;
-  width: 70vw;
+  width: 75vw;
 }
 
 .topbar .search .search-input {
@@ -85,7 +91,7 @@
 }
 
 .topbar .search .search-enter {
-  height: 100%;
+  height: 70%;
   width: 20%;
   padding: 0;
 }
@@ -159,12 +165,23 @@
 */
 .dashboard {
   height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[18];
+      grid-template-columns: repeat(18, 1fr);
+  -ms-grid-rows: (1fr)[18];
+      grid-template-rows: repeat(18, 1fr);
 }
 
 /*
     Desc: Layout for the levels section of the dashboard
 */
 .levels {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 16;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-area: 2 / 2 / span 16 / span 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,7 +189,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 20vw;
   padding: 20px;
 }
 
@@ -195,6 +211,18 @@
 }
 
 /*
+    Desc: Layout for the graph of the dashboard
+*/
+.dashboard_graph {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 9;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 10;
+  grid-area: 2 / 8 / span 9 / span 10;
+  padding: 20px;
+}
+
+/*
     # Styling
 */
 /*
@@ -214,13 +242,17 @@
   border: none;
   font-size: 2.5em;
   outline: none;
-  background-color: #FFFFFF;
-  border: 2px solid #2b2f8e;
+  color: #2b2f8e;
+  background-color: #2b2f8e;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .topbar .search .search-enter:hover {
-  background-color: #2b2f8e;
-  color: #FFFFFF;
+  background-color: #5459cb;
 }
 
 /*
@@ -241,6 +273,13 @@
     Desc: Styling for the levels section of the dashboard
 */
 .levels {
+  -webkit-box-shadow: 0px 0px 6px 1px #e6e6e6;
+          box-shadow: 0px 0px 6px 1px #e6e6e6;
+  border-radius: 50px;
+  background-color: #FFF;
+}
+
+.dashboard_graph {
   -webkit-box-shadow: 0px 0px 6px 1px #e6e6e6;
           box-shadow: 0px 0px 6px 1px #e6e6e6;
   border-radius: 50px;
