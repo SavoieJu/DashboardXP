@@ -145,6 +145,10 @@
           justify-content: center;
 }
 
+.navigation .navigation-option {
+  text-align: center;
+}
+
 .navigation hr {
   width: 50%;
 }
@@ -155,9 +159,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.navigation .link div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /*
@@ -189,25 +203,34 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 20px;
 }
 
 .levels .skill {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 .levels .skill h4 {
   margin: 0;
+}
+
+.levels .skill .levels-skill-skillName {
+  text-align: left;
+}
+
+.levels .skill .levels-skill-level {
+  text-align: center;
+}
+
+.levels .skill .levels-skill-xp {
+  text-align: right;
 }
 
 /*
@@ -229,7 +252,7 @@
     Desc: Styling for the header
 */
 .topbar {
-  background-color: #FFFFFF;
+  background-color: #FFF;
 }
 
 .topbar .search .search-input {
@@ -244,7 +267,7 @@
   outline: none;
   color: #2b2f8e;
   background-color: #2b2f8e;
-  color: white;
+  color: #FFF;
   border-radius: 50px;
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease;
@@ -258,8 +281,18 @@
 /*
     Desc: Styling for the navigation bar
 */
+.navigation .navigation-option:hover {
+  background-color: #2b2f8e;
+  color: #FFF;
+}
+
+.navigation .navigation-active {
+  background-color: #2b2f8e;
+  color: #FFF;
+}
+
 .navigation hr {
-  border: 1px solid black;
+  border: 1px solid #000;
 }
 
 /*
@@ -279,6 +312,13 @@
   background-color: #FFF;
 }
 
+.levels .skill:hover {
+  background-color: #ededed;
+}
+
+/*
+    Desc: Layout for the levels section of the dashboard
+*/
 .dashboard_graph {
   -webkit-box-shadow: 0px 0px 6px 1px #e6e6e6;
           box-shadow: 0px 0px 6px 1px #e6e6e6;

@@ -5,5 +5,11 @@
 .levels {
     box-shadow: 0px 0px 6px 1px rgba(230,230,230,1);
     border-radius: 50px;
-    background-color: #FFF
+    background-color: $white;
+
+    .skill {
+        &:hover {
+            background-color: $gray;
+        }
+    }
 }

@@ -3,7 +3,7 @@
 */
 
 .topbar {
-    background-color: #FFFFFF;
+    background-color: $white;
 
     .search {
 
@@ -19,7 +19,7 @@
             outline: none;
             color: $blue;
             background-color: $blue;
-            color: white;
+            color: $white;
             border-radius: 50px;
             cursor: pointer;
             transition: background-color 0.3s ease;

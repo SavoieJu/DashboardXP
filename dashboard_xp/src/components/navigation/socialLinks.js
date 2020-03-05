@@ -5,8 +5,7 @@ class SocialLinks extends React.Component {
         return (
             <div className="link socialLinks">
                 <div><span>GitHub</span></div>
-                <div><span>LinkedIn</span></div>
-                <div><span>Email</span></div>
+                <div><span>julien@savoie.dev</span></div>
             </div>
         );
     }

@@ -6,11 +6,11 @@ class Navigation extends React.Component{
     render(){
         return (
           <nav className="navigation">
-            <Option></Option>
-            <Option></Option>
-            <Option></Option>
+            <Option option="Daily"></Option>
+            <Option className="navigation-active" option="Weekly"></Option>
+            <Option option="Monthly"></Option>
             <hr></hr>
-            <Option></Option>
+            <Option option="Save Name"></Option>
             <hr></hr>
             <SocialLinks></SocialLinks>
           </nav>

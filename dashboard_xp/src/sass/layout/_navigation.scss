@@ -7,6 +7,10 @@
     flex-direction: column;
     justify-content: center;
 
+    .navigation-option {
+        text-align: center;
+    }
+
     hr {
         width: 50%;
     }
@@ -14,6 +18,11 @@
     .link {
         align-self: center;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+
+        div {
+            align-self: center;
+        }
     }
 }
