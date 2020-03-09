@@ -1,5 +1,4 @@
 import React from "react";
-const hiscores = require('osrs-json-hiscores');
 
 class Search extends React.Component {
 
