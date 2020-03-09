@@ -26,3 +26,29 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+        margin: 10px 0;
+        flex-direction: row;
+        font-size: 0.6em;
+        flex-wrap: wrap;
+
+
+        .navigation-option {
+            padding: 0 10px;
+        }
+        
+        hr {
+            display: none;
+        }
+
+        .link {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 10px;
+        } 
+    }
+}
