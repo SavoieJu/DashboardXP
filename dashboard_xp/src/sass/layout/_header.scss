@@ -60,3 +60,38 @@
         }
     }
 }
+
+
+@media only screen and (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        
+        .topbar-logo {
+            align-self: center;
+        }
+
+        .topbar-search {
+            .search {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                
+
+                .search-input {
+                    width: 100%;
+                    font-size: 1.5em;
+                    text-align: center;
+                    margin: 10px 0;
+                }
+
+                .search-enter {
+                    width: 50%;
+                    align-self: center;
+                }
+            }
+            
+        }
+    }
+}

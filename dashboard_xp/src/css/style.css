@@ -129,6 +129,44 @@
   width: 50%;
 }
 
+@media only screen and (max-width: 768px) {
+  .topbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .topbar .topbar-logo {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .topbar .topbar-search .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .topbar .topbar-search .search .search-input {
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .topbar .topbar-search .search .search-enter {
+    width: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 /*
     Desc: Layout for the navigation bar
 */
@@ -187,6 +225,16 @@
       grid-template-rows: repeat(18, 1fr);
 }
 
+@media only screen and (max-width: 768px) {
+  .dashboard {
+    height: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
 /*
     Desc: Layout for the levels section of the dashboard
 */
@@ -233,6 +281,14 @@
   text-align: right;
 }
 
+@media only screen and (max-width: 768px) {
+  .levels {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-area: 1 / 1 / span 1 / auto;
+  }
+}
+
 /*
     Desc: Layout for the graph of the dashboard
 */
@@ -243,6 +299,14 @@
   -ms-grid-column-span: 10;
   grid-area: 2 / 8 / span 9 / span 10;
   padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard_graph {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-area: 2 / 1 / span 1 / auto;
+  }
 }
 
 /*
@@ -281,6 +345,10 @@
 /*
     Desc: Styling for the navigation bar
 */
+.navigation {
+  background-color: #FFF;
+}
+
 .navigation .navigation-option:hover {
   background-color: #2b2f8e;
   color: #FFF;
@@ -299,7 +367,7 @@
     Desc: Styling for the dashboard
 */
 .dashboard {
-  background-color: #ededed;
+  background-color: lightgray;
 }
 
 /*
@@ -313,16 +381,28 @@
 }
 
 .levels .skill:hover {
-  background-color: #ededed;
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 768px) {
+  .levels {
+    border-radius: 0px;
+  }
 }
 
 /*
-    Desc: Layout for the levels section of the dashboard
+    Desc: Styling for the levels section of the dashboard
 */
 .dashboard_graph {
   -webkit-box-shadow: 0px 0px 6px 1px #e6e6e6;
           box-shadow: 0px 0px 6px 1px #e6e6e6;
   border-radius: 50px;
   background-color: #FFF;
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard_graph {
+    border-radius: 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
