@@ -1,0 +1,16 @@
+/*
+    Desc: Layout for the graph of the dashboard
+*/
+
+.dashboard_graph {
+    grid-area: 2 / 8 / span 9 / span 10;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .dashboard_graph {
+        grid-area: 2 / 1 / span 1 / span 1;
+        padding: 50px 10px;
+    }
+}

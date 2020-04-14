@@ -1,0 +1,24 @@
+/*
+    Desc: Styling for the navigation bar
+*/
+
+.navigation {
+    background-color: $white;
+
+    .navigation-option {
+
+        &:hover {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+
+    .navigation-active {
+        background-color: $blue;
+        color: $white;
+    }
+
+    hr {
+        border: 1px solid $black;
+    }
+}

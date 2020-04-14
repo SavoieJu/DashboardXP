@@ -1,0 +1,32 @@
+/*
+    Desc: Styling for the header
+*/
+
+.topbar {
+    background-color: $white;
+
+    .search {
+
+        .search-input {
+            border: none;
+            font-size: 2.5em;
+            outline: none;
+        }
+
+        .search-enter {
+            border: none;
+            font-size: 2.5em;
+            outline: none;
+            color: $blue;
+            background-color: $blue;
+            color: $white;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: lighten($blue, 20%);
+            }
+        }
+    }
+}

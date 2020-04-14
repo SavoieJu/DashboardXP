@@ -1,0 +1,42 @@
+/*
+    Desc: Layout for the levels section of the dashboard
+*/
+
+.levels {
+    grid-area: 2 / 2 / span 16 / span 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    // width: 20vw; //temp
+    padding: 20px;
+
+    .skill {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        h4 {
+            margin: 0;
+        }
+
+        .levels-skill-skillName {
+            text-align: left;
+        }
+
+        .levels-skill-level {
+            text-align: center;
+        }
+
+        .levels-skill-xp {
+            text-align: right;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .levels {
+        grid-area: 1 / 1 / span 1 / auto;
+        padding: 50px 10px;
+    }
+}
