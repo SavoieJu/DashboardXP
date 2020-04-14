@@ -142,6 +142,7 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    padding: 10px 0;
   }
   .topbar .topbar-search .search {
     display: -webkit-box;
@@ -157,13 +158,14 @@
     width: 100%;
     font-size: 1.5em;
     text-align: center;
-    margin: 10px 0;
+    margin: 20px 0 30px 0;
   }
   .topbar .topbar-search .search .search-enter {
     width: 50%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    border-radius: 0;
   }
 }
 
@@ -323,6 +325,12 @@
   }
 }
 
+@media only screen and (max-width: 1300px) {
+  .skill h4 {
+    font-size: 0.6em;
+  }
+}
+
 /*
     Desc: Layout for the graph of the dashboard
 */
@@ -389,6 +397,7 @@
 .navigation .navigation-option:hover {
   background-color: #2b2f8e;
   color: #FFF;
+  cursor: pointer;
 }
 
 .navigation .navigation-active {
@@ -398,6 +407,11 @@
 
 .navigation hr {
   border: 1px solid #000;
+}
+
+.navigation .socialLinks div a {
+  text-decoration: none;
+  color: black;
 }
 
 /*

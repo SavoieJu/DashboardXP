@@ -10,6 +10,7 @@
         &:hover {
             background-color: $blue;
             color: $white;
+            cursor: pointer;
         }
     }
 
@@ -20,5 +21,14 @@
 
     hr {
         border: 1px solid $black;
+    }
+
+    .socialLinks {
+        div {
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
     }
 }

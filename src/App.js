@@ -6,14 +6,24 @@ import logo from './logo.svg';
 import './css/style.css';
 
 
-function App() {
-  return (
-    <div className="App">
-      <Header></Header>
-      <Navigation></Navigation>
-      <Dashboard></Dashboard>
-    </div>
-  );
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+        currentTimeFrame: "Weekly",
+    };
+}
+
+  render(){
+    return (
+      <div className="App">
+        <Header></Header>
+        <Navigation></Navigation>
+        <Dashboard></Dashboard>
+      </div>
+    );
+  }
 }
 
 export default App;

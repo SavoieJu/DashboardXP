@@ -6,7 +6,7 @@ class Graph extends React.Component{
     constructor(props) {
         super(props);
         this.data = {
-            labels: ['Saturday', 'Monday', 'Tuesday', 'Wedenesday', 'Thursday', 'Friday', 'Sunday'],
+            labels: ['00:00', '04:00', '08:00', '12:00', '16:00', '20:00', '24:00'],
             datasets: [
               {
                 label: 'Total XP',
@@ -27,7 +27,7 @@ class Graph extends React.Component{
                 pointHoverBorderWidth: 5,
                 pointRadius: 2,
                 pointHitRadius: 10,
-                data: [11327759, 11927759, 12237759, 12327759, 13327759, 16647259, 18327759]
+                data: [17027759, 17227759, 17267759, 17727759, 17927759, 18247259, 18327759]
                 
               }
             ],
